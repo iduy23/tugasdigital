@@ -31,6 +31,37 @@
       align-items:center;
       padding:18px 0;
     }
+    /* NAVBAR LOGO IMAGE */
+    .logo-image{
+      height:55px;
+      width:auto;
+      object-fit:contain;
+      transition:0.3s;
+    }
+    
+    .logo-image:hover{
+      transform:scale(1.05);
+    }
+    
+    /* FOOTER LOGO IMAGE */
+    .footer-logo-image{
+      height:60px;
+      width:auto;
+      object-fit:contain;
+      transition:0.3s;
+    }
+    
+    .footer-logo-image:hover{
+      transform:scale(1.05);
+    }
+    
+    /* HAPUS STYLE LAMA */
+    .logo-icon,
+    .logo-text,
+    .footer-logo-icon,
+    .footer-logo-text{
+      display:none;
+    }
     
     /* MENU */
     .menu{
@@ -721,11 +752,10 @@
   <nav>
     <div class="container nav-wrapper">
       <div class="logo">
-        <div class="logo-icon">TD</div>
-
-          <div class="logo-text">
-            <span>Tugas</span>Digital
-          </div>
+        <img
+          src="images/logo.png"
+          alt="TugasDigital Logo"
+          class="logo-image">
       </div>
 
       <div class="menu">
@@ -947,11 +977,10 @@
       <div class="footer-brand">
   
         <div class="footer-logo">
-          <div class="footer-logo-icon">TD</div>
-  
-          <div class="footer-logo-text">
-            <span>Tugas</span>Digital
-          </div>
+          <img
+            src="images/logo.png"
+            alt="TugasDigital Logo"
+            class="footer-logo-image">
         </div>
   
         <p>
