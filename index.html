@@ -7,7 +7,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  
   <style>
 
     *{
@@ -477,6 +478,36 @@
         transform:scale(1);
       }
     }
+
+    /* SOCIAL ICON */
+    .social-link{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:16px;
+      color:#64748b;
+      transition:0.3s;
+      font-weight:500;
+    }
+    
+    .social-link i{
+      font-size:22px;
+    }
+    
+    /* HOVER INSTAGRAM */
+    .social-link:hover .fa-instagram{
+      color:#e1306c;
+    }
+    
+    /* HOVER TIKTOK */
+    .social-link:hover .fa-tiktok{
+      color:#000000;
+    }
+    
+    .social-link:hover{
+      color:#2563eb;
+      transform:translateX(5px);
+    }
     
     /* =========================
        RESPONSIVE
@@ -873,13 +904,11 @@
   
         <h3>Ikuti Kami</h3>
   
-        <a href="https://instagram.com/" target="_blank">
-          📸 Instagram
-        </a>
+        <a href="https://instagram.com/" target="_blank" class="social-link">
+          <i class="fa-brands fa-instagram"></i> Instagram </a>
   
-        <a href="https://tiktok.com/" target="_blank">
-          🎵 TikTok
-        </a>
+        <a href="https://tiktok.com/" target="_blank" class="social-link">
+          <i class="fa-brands fa-tiktok"></i> TikTok </a>
   
       </div>
   
